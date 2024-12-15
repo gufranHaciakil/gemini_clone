@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Varela+Round&display=swap");
+* {
+  font-family: "Varela Round", serif;
+  font-family: "Cairo", sans-serif !important;
+
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body::-webkit-scrollbar,
+.result::-webkit-scrollbar {
+  width: 3px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar,
+.result::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar,
+.result::-webkit-scrollbar-thumb {
+  background-color: rgb(206, 206, 206); /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(225, 225, 225);
+}

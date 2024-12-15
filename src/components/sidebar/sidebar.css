@@ -1,0 +1,103 @@
+.sidebar {
+  background-color: #f0f5fc;
+  padding: 7px 12px;
+  min-width: 70px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.menu:hover {
+  scale: 1.1;
+}
+.new-chat img {
+  width: 18px;
+  height: 18px;
+}
+.sidebar .top .new-chat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e0e5ee;
+  padding: 0 0.5rem;
+  border-radius: 4rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+.sidebar .top .new-chat:hover {
+  cursor: pointer;
+  scale: 0.95;
+}
+.top .recent {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.top .recent .recent-entry {
+  transition: 0.2s all;
+  padding: 0 8px;
+}
+.bottom .recent-entry img {
+  padding-left: 7px;
+}
+.recent-item:hover {
+  background-color: #e0e5ee;
+  cursor: pointer;
+  border-radius: 4rem;
+  transition: 0.2s all;
+}
+.recent-item {
+  animation: fadeIn 1.5s;
+
+  padding: 0.5rem;
+}
+.top .recent .recent-entry p {
+  font-size: 13px;
+  font-weight: 500;
+  width: 7rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.top .recent img {
+  width: 20px;
+  height: 20px;
+}
+.bottom img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.bottom {
+  width: 100%;
+}
+.bottom .recent-entry {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+}
+.bottom .recent-entry p {
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.1s all;
+}
+
+.top .recent-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+}
