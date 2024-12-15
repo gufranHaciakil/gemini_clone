@@ -12,6 +12,7 @@ import user from "./user.png";
 import send from "./send.png";
 import mike from "./mike.png";
 import gallery from "./gallery.png";
+import restart from "./restart.png";
 export const assets = {
   menu,
   plus,
@@ -27,4 +28,5 @@ export const assets = {
   send,
   mike,
   gallery,
+  restart,
 };

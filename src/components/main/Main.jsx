@@ -17,7 +17,15 @@ const Main = () => {
     <div className="main">
       <div className="nav">
         <div>Gemini</div>
-        <img src={assets.user} alt="" />
+        <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+          <img
+            className="restart"
+            onClick={() => (window.location = "/")}
+            src={assets.restart}
+            alt=""
+          />
+          <img className="user" src={assets.user} alt="" />
+        </div>
       </div>
       <div className="main-container">
         {showResult ? (
@@ -27,7 +35,9 @@ const Main = () => {
             </div>
             <div className="result-bottom">
               {loading ? (
-                <div className="loading"><hr/></div>
+                <div className="loading">
+                  <hr />
+                </div>
               ) : (
                 <div dangerouslySetInnerHTML={{ __html: response }}></div>
               )}
